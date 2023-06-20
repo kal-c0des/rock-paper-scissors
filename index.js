@@ -70,11 +70,11 @@ while (roundCount < 5) {
 
   function endGame() {
     if (playerScore > computerScore) {
-      return alert("GAME OVER!  You beat the computer.  Congrats!");
+      return "GAME OVER!  You beat the computer.  Congrats!";
     } else if (playerScore < computerScore) {
-      return alert("GAME OVER!  You lose.  Better luck next time!");
+      return "GAME OVER!  You lose.  Better luck next time!";
     } else {
-      return alert("GAME OVER!  We have a tie.  Refresh to play again!");
+      return "GAME OVER!  Nice try, but we have a tie.";
     }
   }
 
@@ -88,5 +88,6 @@ while (roundCount < 5) {
   // game end
   if (roundCount === 5) {
     console.log(endGame());
+    console.log(alert("Refresh your browser to play again!"));
   }
 }
