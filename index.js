@@ -8,8 +8,24 @@ function playRound(playerSelection, computerSelection) {
     roundWinner = "tie";
   }
   // player wins
+  if (
+    (playerSelection === "ROCK" && computerSelection === "SCISSORS") ||
+    (playerSelection === "PAPER" && computerSelection === "ROCK") ||
+    (playerSelection === "SCISSORS" && computerSelection === "PAPER")
+  ) {
+    roundWinner = "player";
+    playerScore++;
+  }
 
   // computer wins
+  if (
+    (computerSelection === "ROCK" && playerSelection === "SCISSORS") ||
+    (computerSelection === "PAPER" && playerSelection === "ROCK") ||
+    (computerSelection === "SCISSORS" && playerSelection === "PAPER")
+  ) {
+    roundWinner = "computer";
+    computerScore++;
+  }
 }
 // player selection prompt and input
 
