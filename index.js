@@ -4,20 +4,41 @@ let roundCount = 0;
 
 while (roundCount < 5) {
   // player input
-  let playerSelection = prompt(
-    "Make your choice: rock, paper, or scissors"
-  ).toLowerCase();
+  // let playerSelection = prompt(
+  //   "Make your choice: rock, paper, or scissors"
+  // ).toLowerCase();
+
+  const btn1 = document.querySelector("#btn-rock");
+  btn1.addEventListener("click", () => {
+    let playerSelection = "rock";
+    console.log("You chose:", playerSelection);
+    console.log(playRound());
+  });
+
+  const btn2 = document.querySelector("#btn-paper");
+  btn2.addEventListener("click", () => {
+    playerSelection = "paper";
+    console.log("You chose:", playerSelection);
+    console.log(playRound());
+  });
+
+  const btn3 = document.querySelector("#btn-scissors");
+  btn3.addEventListener("click", () => {
+    playerSelection = "scissors";
+    console.log("You chose:", playerSelection);
+    console.log(playRound());
+  });
 
   // is player input valid
-  while (
-    playerSelection !== "rock" &&
-    playerSelection !== "paper" &&
-    playerSelection !== "scissors"
-  ) {
-    playerSelection = prompt("Make your choice: rock, paper, or scissors");
-  }
+  // while (
+  //   playerSelection !== "rock" &&
+  //   playerSelection !== "paper" &&
+  //   playerSelection !== "scissors"
+  // ) {
+  //   playerSelection = prompt("Make your choice: rock, paper, or scissors");
+  // }
 
-  console.log("You chose:", playerSelection);
+  // console.log("You chose:", playerSelection);
 
   // computer choice
   function getCompChoice() {
