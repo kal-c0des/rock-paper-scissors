@@ -1,3 +1,65 @@
 * {
   margin: 0;
 }
+
+body {
+  background-color: #ccd5ae;
+}
+
+h1,
+h2 {
+  display: flex;
+  justify-content: center;
+  color: teal;
+  margin: 24px;
+}
+
+btn-container {
+  display: flex;
+  justify-items: center;
+}
+
+.game-btns {
+  display: flex;
+  justify-content: space-evenly;
+  margin-left: 240px;
+  margin-right: 240px;
+  margin-bottom: 24px;
+}
+
+button,
+img {
+  border-radius: 20px;
+  border-style: hidden;
+  background-color: #faedcd;
+}
+
+img:hover {
+  background-color: #fefae0;
+}
+
+.score-board {
+  display: flex;
+  justify-content: center;
+  background-color: #e9edc9;
+}
+
+.scores {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: #e9edc9;
+}
+
+p {
+  font-size: 18px;
+  font-weight: bold;
+  background-color: #e9edc9;
+}
+
+.round-count {
+  display: flex;
+  justify-content: center;
+  padding-top: 48px;
+  background-color: #e9edc9;
+  height: 45vh;
+}
