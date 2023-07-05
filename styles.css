@@ -17,18 +17,21 @@ h2 {
 btn-container {
   display: flex;
   justify-items: center;
+  height: 25vh;
 }
 
 .game-btns {
   display: flex;
   justify-content: space-evenly;
-  margin-left: 240px;
-  margin-right: 240px;
+  margin-left: 200px;
+  margin-right: 200px;
   margin-bottom: 24px;
+  gap: 8px;
 }
 
 button,
 img {
+  display: flex;
   border-radius: 20px;
   border-style: hidden;
   background-color: #faedcd;
@@ -36,6 +39,16 @@ img {
 
 img:hover {
   background-color: #fefae0;
+}
+
+.message,
+.reset {
+  display: flex;
+  justify-content: center;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  background-color: #e9edc9;
+  height: 3vh;
 }
 
 .score-board {
@@ -46,12 +59,12 @@ img:hover {
 
 .scores {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   background-color: #e9edc9;
 }
 
 p {
-  font-size: 18px;
+  font-size: 20px;
   font-weight: bold;
   background-color: #e9edc9;
 }
@@ -59,7 +72,9 @@ p {
 .round-count {
   display: flex;
   justify-content: center;
+  align-items: flex-end;
   padding-top: 48px;
+  padding-bottom: 48px;
   background-color: #e9edc9;
-  height: 45vh;
+  height: 25vh;
 }
