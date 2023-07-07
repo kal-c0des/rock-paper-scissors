@@ -64,8 +64,6 @@ const startGame = () => {
   // game round
   let playRound = (player, computer) => {
     if (player === computer) {
-      playerScore++;
-      computerScore++;
       messageText.textContent = "Huh.. a tie.  Go again!";
     } else if (
       // player wins
@@ -101,8 +99,6 @@ const startGame = () => {
       messageText.textContent = "GAME OVER!  You beat the computer.  Congrats!";
     } else if (playerScore < computerScore) {
       messageText.textContent = "GAME OVER!  You lose.  Better luck next time!";
-    } else {
-      messageText.textContent = "GAME OVER!  Nice try, but we have a tie.";
     }
     disableButton();
     resetGame();
